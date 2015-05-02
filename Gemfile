@@ -45,4 +45,5 @@ end
 
 gem 'twitter-bootstrap-rails'
 gem 'simple_form'
+gem 'devise'
 
