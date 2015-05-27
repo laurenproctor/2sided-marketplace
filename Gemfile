@@ -50,4 +50,6 @@ end
 gem 'twitter-bootstrap-rails'
 gem 'simple_form'
 gem 'devise'
+gem 'aws-sdk'
+gem 'friendly_id'
 

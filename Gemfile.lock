@@ -37,6 +37,14 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     arel (6.0.0)
+    aws-sdk (2.0.46)
+      aws-sdk-resources (= 2.0.46)
+    aws-sdk-core (2.0.46)
+      builder (~> 3.0)
+      jmespath (~> 1.0)
+      multi_json (~> 1.0)
+    aws-sdk-resources (2.0.46)
+      aws-sdk-core (= 2.0.46)
     bcrypt (3.1.10)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
@@ -69,12 +77,16 @@ GEM
       dotenv (= 2.0.1)
     erubis (2.7.0)
     execjs (2.5.2)
+    friendly_id (5.1.0)
+      activerecord (>= 4.0.0)
     globalid (0.3.5)
       activesupport (>= 4.1.0)
     i18n (0.7.0)
     jbuilder (2.2.13)
       activesupport (>= 3.0.0, < 5)
       multi_json (~> 1.2)
+    jmespath (1.0.2)
+      multi_json (~> 1.0)
     jquery-rails (4.0.3)
       rails-dom-testing (~> 1.0)
       railties (>= 4.2.0)
@@ -175,11 +187,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  aws-sdk
   byebug
   cancan
   coffee-rails (~> 4.1.0)
   devise
   dotenv-rails
+  friendly_id
   jbuilder (~> 2.0)
   jquery-rails
   paperclip
